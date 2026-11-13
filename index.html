@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.classList.add("js")</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beluco Importados · iPhone novo e seminovo em até 21x</title>
+<meta name="description" content="iPhones novos e seminovos, Xiaomi, MacBook, AirPods e Apple Watch. Em até 21x no cartão, seu iPhone usado na troca e entrega na região.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1D4FA0">
+<link rel="icon" href="img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:opsz,wght@6..12,400..700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --azul:#1D4FA0; --azul-2:#2A63C4; --azul-3:#0D2B5E; --azul-claro:#E8EFFB;
+  --bg:#FFFFFF; --cinza:#F3F5F9; --cinza-2:#E4E8F0;
+  --ink:#0E1A2E; --ink-2:#56627A;
+  --gut:clamp(16px,4vw,56px); --max:1240px; --r:24px;
+  --display:"Nunito",system-ui,sans-serif; --body:"Nunito Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.55 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,select,input{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none}
+:focus-visible{outline:3px solid var(--azul-2);outline-offset:3px;border-radius:8px}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.disp{font-family:var(--display);font-weight:900;letter-spacing:-.025em;line-height:1.02}
+h2.disp{font-size:clamp(36px,5vw,64px)}
+.lead{font-size:clamp(17px,1.5vw,20px);color:var(--ink-2);max-width:34em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 26px;border-radius:999px;font-weight:700;font-size:16px;white-space:nowrap;transition:transform .2s cubic-bezier(.2,.8,.2,1),background .2s,color .2s}
+.btn:active{transform:scale(.97)}
+.btn-azul{background:var(--azul);color:#fff}.btn-azul:hover{background:var(--azul-2)}
+.btn-branco{background:#fff;color:var(--azul)}.btn-branco:hover{background:var(--azul-claro)}
+.btn-line{box-shadow:inset 0 0 0 2px currentColor}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* header */
+header.top{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--cinza-2)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+.mark{display:flex;align-items:center;gap:12px;white-space:nowrap}
+.mark img{width:48px;height:48px;border-radius:50%;box-shadow:0 0 0 1px var(--cinza-2)}
+.mark b{font-family:var(--display);font-weight:900;font-size:23px;color:var(--azul);letter-spacing:-.02em;line-height:1}
+.mark small{display:block;font:700 10px/1 var(--body);letter-spacing:.32em;color:var(--azul);margin-top:3px}
+nav.links{display:flex;gap:30px;font-weight:600;font-size:15px}
+nav.links a{color:var(--ink-2);transition:color .2s}
+nav.links a:hover{color:var(--azul)}
+header.top .btn{height:46px;padding:0 20px;font-size:15px}
+
+/* hero */
+.hero{background:var(--cinza);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(28px,5vw,72px);align-items:center;padding-top:clamp(40px,6vw,80px);padding-bottom:clamp(48px,6vw,80px)}
+.hero h1{font-size:clamp(40px,5.2vw,72px);color:var(--ink)}
+.hero h1 .l{display:block;white-space:nowrap;color:var(--ink)}
+.hero h1 span{color:var(--azul)}
+.hero .lead{margin-top:28px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+.hero .btn-line{color:var(--azul)}
+.perks{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:clamp(20px,3vw,44px);margin-top:44px}
+.perks b{display:block;font-family:var(--display);font-weight:900;font-size:clamp(26px,2.6vw,34px);color:var(--azul);line-height:1}
+.perks span{font-size:14px;color:var(--ink-2)}
+.hero-pic{position:relative;border-radius:32px;overflow:hidden;aspect-ratio:4/4.5;background:#fff}
+.hero-pic img{width:100%;height:100%;object-fit:cover}
+.float{position:absolute;background:#fff;border-radius:18px;padding:14px 18px;display:flex;align-items:center;gap:12px;font-size:14px;font-weight:600;box-shadow:0 12px 32px rgba(13,43,94,.14)}
+.float i{width:38px;height:38px;border-radius:12px;background:var(--azul);color:#fff;display:grid;place-items:center;font-style:normal;flex:none}
+.float i svg{width:20px;height:20px}
+.float b{display:block;font-family:var(--display);font-size:17px;color:var(--ink)}
+.float span{color:var(--ink-2);font-weight:500}
+.f1{left:-28px;bottom:16%}
+.f2{right:18px;top:18px}
+.hero-frame{position:relative}
+
+/* faixa */
+.band{background:var(--azul);color:#fff}
+.band .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding-top:28px;padding-bottom:28px}
+.band div{display:flex;gap:14px;align-items:center;font-size:15px;line-height:1.35}
+.band svg{width:28px;height:28px;flex:none;opacity:.9}
+.band b{display:block;font-size:16px}
+
+/* vitrine */
+.shop{padding:clamp(72px,9vw,128px) 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:34px}
+.sec-head p{max-width:26em;color:var(--ink-2)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.tab{height:44px;padding:0 18px;border-radius:999px;background:var(--cinza);font-weight:700;font-size:15px;color:var(--ink-2);transition:background .2s,color .2s}
+.tab:hover{color:var(--azul)}
+.tab[aria-pressed=true]{background:var(--azul);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,1.8vw,22px)}
+.card{background:var(--cinza);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.card:hover{transform:translateY(-4px)}
+.card .ph{position:relative;aspect-ratio:1/1;overflow:hidden;background:#fff}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;left:14px;top:14px;height:28px;padding:0 12px;border-radius:999px;background:#fff;color:var(--azul);font-size:12px;font-weight:800;display:inline-flex;align-items:center;letter-spacing:.02em}
+.badge.semi{background:var(--azul);color:#fff}
+.card .b{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
+.card h3{font-family:var(--display);font-weight:800;font-size:21px;line-height:1.1}
+.card .opt{font-size:14px;color:var(--ink-2);margin-top:4px;flex:1}
+.card .pr{margin-top:14px;font-size:13px;color:var(--ink-2)}
+.card .pr b{display:block;font-family:var(--display);font-size:24px;font-weight:900;color:var(--ink);line-height:1.1}
+.card .want{margin-top:14px;height:44px;border-radius:999px;background:#fff;color:var(--azul);font-weight:800;font-size:14px;transition:background .2s,color .2s}
+.card .want:hover{background:var(--azul);color:#fff}
+.card[hidden]{display:none}
+.card.ask{background:var(--azul);color:#fff;justify-content:center}
+.card.ask .b{justify-content:center;gap:12px;padding:28px}
+.card.ask h3{font-size:28px}
+.card.ask .opt{color:#D5E1F7;flex:0}
+.card.ask .btn{margin-top:10px}
+.note{font-size:13px;color:var(--ink-2);margin-top:22px}
+
+/* simulador */
+.sim{background:var(--azul-3);color:#fff;padding:clamp(72px,9vw,128px) 0}
+.sim .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(32px,5vw,72px);align-items:start}
+.sim h2{color:#fff}
+.sim .lead{color:#C9D6EE;margin-top:20px}
+form.f{margin-top:34px;display:grid;gap:22px}
+.fs{border:0}
+.fs legend,.lbl{font-weight:700;font-size:15px;margin-bottom:10px;display:block;color:#fff}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg label{position:relative}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg span{display:inline-flex;align-items:center;height:44px;padding:0 16px;border-radius:12px;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.28);font-size:15px;font-weight:600;cursor:pointer;transition:background .2s,box-shadow .2s}
+.seg span:hover{box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.6)}
+.seg input:checked+span{background:#fff;color:var(--azul-3);box-shadow:none}
+.seg input:focus-visible+span{outline:3px solid var(--azul-2);outline-offset:2px}
+select.sel,input.txt{width:100%;height:52px;border-radius:12px;border:0;background:rgba(255,255,255,.1);color:#fff;padding:0 16px;font-size:16px;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.28)}
+select.sel option{color:var(--ink)}
+input.txt::placeholder{color:#9FB1D3}
+.swap{display:flex;gap:12px;align-items:center;font-weight:700;cursor:pointer}
+.swap input{width:22px;height:22px;accent-color:#fff}
+.trade{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+.trade[hidden]{display:none}
+.ticket{position:sticky;top:96px;background:#fff;color:var(--ink);border-radius:28px;overflow:hidden}
+.ticket .ph{aspect-ratio:16/10;background:var(--cinza);position:relative}
+.ticket .ph img{width:100%;height:100%;object-fit:cover;transition:opacity .3s}
+.ticket .in{padding:24px 26px 26px}
+.ticket h3{font-family:var(--display);font-weight:900;font-size:28px;line-height:1.05}
+.ticket .sub{color:var(--ink-2);font-size:15px;margin-top:4px}
+.ticket dl{margin-top:18px;display:grid;grid-template-columns:auto 1fr;gap:10px 16px;font-size:15px}
+.ticket dt{color:var(--ink-2)}
+.ticket dd{text-align:right;font-weight:700}
+.ticket .tot{margin-top:18px;padding-top:18px;border-top:1px dashed var(--cinza-2);display:flex;justify-content:space-between;align-items:end;gap:12px}
+.ticket .tot span{font-size:13px;color:var(--ink-2)}
+.ticket .tot b{display:block;font-family:var(--display);font-weight:900;font-size:30px;color:var(--azul);line-height:1}
+.ticket .btn{width:100%;margin-top:20px}
+.ticket .fine{font-size:12px;color:var(--ink-2);margin-top:12px;text-align:center}
+
+/* jeito beluco */
+.jeito{padding:clamp(72px,9vw,128px) 0}
+.jeito .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(32px,5vw,80px);align-items:center}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:14px}
+.mosaic img{width:100%;height:100%;object-fit:cover;border-radius:var(--r)}
+.mosaic .big{grid-column:span 2;aspect-ratio:16/10}
+.mosaic .sm{aspect-ratio:1}
+.jeito ul{list-style:none;margin-top:30px;display:grid;gap:18px}
+.jeito li{display:grid;grid-template-columns:44px 1fr;gap:14px}
+.jeito li i{width:44px;height:44px;border-radius:14px;background:var(--azul-claro);color:var(--azul);display:grid;place-items:center}
+.jeito li i svg{width:22px;height:22px}
+.jeito li b{display:block;font-size:17px}
+.jeito li p{color:var(--ink-2);font-size:16px}
+
+/* insta */
+.ig{background:var(--cinza);padding:clamp(72px,9vw,120px) 0}
+.ig-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(10px,1.4vw,16px)}
+.ig-grid a{border-radius:18px;overflow:hidden;aspect-ratio:4/5;display:block}
+.ig-grid img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.ig-grid a:hover img{transform:scale(1.04)}
+
+/* faq */
+.faq{padding:clamp(72px,9vw,128px) 0}
+.faq .wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:clamp(32px,5vw,80px);align-items:start}
+details{border-bottom:1px solid var(--cinza-2)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:22px 0;font-family:var(--display);font-weight:800;font-size:clamp(18px,1.6vw,21px)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:26px;line-height:1;color:var(--azul);transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 22px;color:var(--ink-2);max-width:40em}
+
+/* cta final */
+.end{background:var(--azul);color:#fff;padding:clamp(72px,9vw,120px) 0 0;overflow:hidden}
+.end .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:end}
+.end h2{color:#fff}
+.end .lead{color:#D5E1F7;margin-top:20px}
+.end .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px;padding-bottom:clamp(56px,7vw,96px)}
+.end .btn-line{color:#fff}
+.end .pic{align-self:end;border-radius:28px 28px 0 0;overflow:hidden;aspect-ratio:4/3.6}
+.end .pic img{width:100%;height:100%;object-fit:cover}
+footer{background:var(--azul-3);color:#AFC0DF;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:24px;padding-bottom:26px}
+footer a{text-decoration:underline;text-underline-offset:3px}
+
+.toast{position:fixed;left:50%;top:22px;transform:translate(-50%,-200px);z-index:60;background:#fff;color:var(--azul-3);border-radius:14px;padding:14px 20px;font-weight:700;font-size:15px;box-shadow:0 10px 30px rgba(0,0,0,.18);transition:transform .35s;max-width:calc(100% - 32px)}
+.toast.show{transform:translate(-50%,0)}
+
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}*{transition:none!important}}
+
+@media (max-width:1020px){
+  nav.links{display:none}
+  .hero .wrap,.sim .wrap,.jeito .wrap,.faq .wrap,.end .wrap{grid-template-columns:1fr}
+  .hero-pic{aspect-ratio:4/3.4}
+  .f1{left:14px}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .band .wrap{grid-template-columns:1fr 1fr}
+  .sec-head{flex-direction:column;align-items:start}
+  .ticket{position:static}
+  .ig-grid{grid-template-columns:repeat(3,1fr)}
+  .ig-grid a:nth-child(n+4){display:none}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  header.top .wrap{height:66px}
+  .mark img{width:42px;height:42px}
+  .mark b{font-size:20px}
+  header.top .btn{height:42px;padding:0 14px;font-size:14px}
+  header.top .btn span{display:none}
+  .perks{grid-template-columns:repeat(3,1fr);gap:14px}
+  .perks b{font-size:22px}
+  .perks span{font-size:13px;display:block;line-height:1.3;margin-top:4px}
+  .float{padding:10px 14px;font-size:13px}
+  .float i{width:32px;height:32px}
+  .f2{display:none}
+  .band .wrap{grid-template-columns:1fr;gap:16px}
+  .grid{gap:12px}
+  .card .b{padding:14px}
+  .card h3{font-size:18px}
+  .card.ask .b{padding:18px}
+  .card.ask h3{font-size:22px}
+  .card.ask .btn{height:46px;padding:0 12px;font-size:14px;width:100%}
+  .card .pr b{font-size:20px}
+  .badge{left:10px;top:10px;font-size:11px;padding:0 10px}
+  .trade{grid-template-columns:1fr}
+  .ig-grid{grid-template-columns:repeat(2,1fr)}
+  .ig-grid a:nth-child(n+3){display:none}
+  .end .pic{display:none}
+  .end .ctas{padding-bottom:64px}
+}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a class="mark" href="#topo" aria-label="Beluco Importados, início"><img src="img/logo.jpg" alt="Logo Beluco Importados"><span><b>Beluco</b><small>IMPORTADOS</small></span></a>
+  <nav class="links" aria-label="Seções"><a href="#vitrine">Vitrine</a><a href="#pedido">Monte seu pedido</a><a href="#beluco">Por que a Beluco</a><a href="#duvidas">Dúvidas</a></nav>
+  <a class="btn btn-azul" href="https://wa.me/message/QRRWQ7CILKROH1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.2 1.3Z"/></svg><span>Falar no WhatsApp</span></a>
+</div></header>
+
+<main id="topo">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1 class="disp"><span class="l">Seu novo iPhone</span> <span class="l">está <span>aqui.</span></span></h1>
+      <p class="lead">iPhones novos e seminovos, Xiaomi, MacBook e acessórios. Parcelamos em até 21x no cartão, pegamos seu iPhone usado na troca e entregamos na região.</p>
+      <div class="ctas">
+        <a class="btn btn-azul" href="#pedido">Montar meu pedido</a>
+        <a class="btn btn-line" href="#vitrine">Ver a vitrine</a>
+      </div>
+      <div class="perks">
+        <div><b>21x</b><span>no cartão</span></div>
+        <div><b>Troca</b><span>seu iPhone entra na conta</span></div>
+        <div><b>Entrega</b><span>em toda a região</span></div>
+      </div>
+    </div>
+    <div class="hero-frame">
+      <div class="hero-pic"><img src="img/hero.jpg" alt="iPhone branco visto de trás" fetchpriority="high"></div>
+      <div class="float f1"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a3 3 0 0 1 3-3h15"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a3 3 0 0 1-3 3H3"/></svg></i><div><b>Aceitamos seu iPhone</b><span>como parte do pagamento</span></div></div>
+      <div class="float f2"><img src="img/logo.jpg" alt="" style="width:34px;height:34px;border-radius:50%"><div><b>Lacrado ou seminovo</b><span>você escolhe pelo bolso</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-label="Vantagens">
+  <div class="wrap">
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span><b>Até 21x no cartão</b>Condições do dia no atendimento</span></div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a3 3 0 0 1 3-3h15"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a3 3 0 0 1-3 3H3"/></svg><span><b>iPhone na troca</b>Avaliado na hora, abate no valor</span></div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg><span><b>Entrega na região</b>Combinou, chegou na sua porta</span></div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span><b>Atendimento de gente</b>Direto com a Beluco no WhatsApp</span></div>
+  </div>
+</section>
+
+<section class="shop" id="vitrine">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2 class="disp">Vitrine</h2>
+      <p>Uma amostra do que costuma ter na loja. O estoque muda toda semana: se não achar o seu, pergunte que a gente busca.</p>
+    </div>
+    <div class="tabs rv" role="group" aria-label="Filtrar vitrine">
+      <button class="tab" data-f="all" aria-pressed="true">Tudo</button>
+      <button class="tab" data-f="novo" aria-pressed="false">iPhone novo</button>
+      <button class="tab" data-f="semi" aria-pressed="false">Seminovo</button>
+      <button class="tab" data-f="xiaomi" aria-pressed="false">Xiaomi</button>
+      <button class="tab" data-f="mac" aria-pressed="false">MacBook</button>
+      <button class="tab" data-f="acc" aria-pressed="false">Acessórios</button>
+    </div>
+    <div class="grid" id="grid"></div>
+    <p class="note">Preços e modelos de exemplo. Valores à vista no Pix; no cartão, parcelamos em até 21x com as condições do dia.</p>
+  </div>
+</section>
+
+<section class="sim" id="pedido">
+  <div class="wrap">
+    <div class="rv">
+      <h2 class="disp">Monte seu pedido</h2>
+      <p class="lead">Escolha o aparelho, diga se tem um iPhone para dar na troca e como quer pagar. A conversa no WhatsApp já começa com tudo que a gente precisa para te passar o valor final.</p>
+      <form class="f" id="f" onsubmit="return false">
+        <div><label class="lbl" for="modelo">Aparelho que você quer</label><select class="sel" id="modelo"></select></div>
+        <fieldset class="fs"><legend>Condição</legend><div class="seg" id="cond"></div></fieldset>
+        <fieldset class="fs"><legend>Armazenamento</legend><div class="seg" id="gb"></div></fieldset>
+        <fieldset class="fs"><legend>Pagamento</legend><div class="seg" id="pag"></div></fieldset>
+        <label class="swap"><input type="checkbox" id="temTroca"> Tenho um iPhone para dar na troca</label>
+        <div class="trade" id="trade" hidden>
+          <div><label class="lbl" for="meu">Qual é o seu iPhone?</label><input class="txt" id="meu" placeholder="Ex.: iPhone 13, 128 GB"></div>
+          <div><label class="lbl" for="bat">Saúde da bateria</label><select class="sel" id="bat"><option>Não sei</option><option>90% ou mais</option><option>80% a 89%</option><option>Abaixo de 80%</option></select></div>
+        </div>
+      </form>
+    </div>
+    <aside class="ticket rv" aria-live="polite">
+      <div class="ph"><img id="tImg" src="img/ig-p10.jpg" alt=""></div>
+      <div class="in">
+        <h3 id="tNome">iPhone 17 Pro</h3>
+        <p class="sub" id="tSub">Novo, lacrado</p>
+        <dl id="tDl"></dl>
+        <div class="tot"><div><span>A partir de</span><b id="tPreco">R$ 0</b></div><div style="text-align:right"><span id="tParc">ou até 21x no cartão</span></div></div>
+        <button class="btn btn-azul" id="enviar" type="button">Enviar pedido no WhatsApp</button>
+        <p class="fine">O pedido é copiado para você colar na conversa. Valor final confirmado no atendimento.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="jeito" id="beluco">
+  <div class="wrap">
+    <div class="mosaic rv">
+      <img class="big" src="img/ig-p3.jpg" alt="Atendente da Beluco mostrando caixas de iPhone" loading="lazy" style="object-position:50% 45%">
+      <img class="sm" src="img/ig-h1.jpg" alt="Caixas de iPhone empilhadas na Beluco" loading="lazy">
+      <img class="sm" src="img/ig-p13.jpg" alt="iPhone sobre a caixa aberta" loading="lazy">
+    </div>
+    <div class="rv">
+      <h2 class="disp">Por que comprar na Beluco</h2>
+      <p class="lead" style="margin-top:20px">Você fala com quem vende, vê o aparelho de verdade antes de pagar e recebe na sacola da loja. Sem robô, sem anúncio sumindo.</p>
+      <ul>
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M12 18h.01"/></svg></i><div><b>Novo e seminovo lado a lado</b><p>Compare o lacrado com o seminovo do mesmo modelo e escolha pelo bolso.</p></div></li>
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></i><div><b>Seminovo com tudo dito</b><p>Saúde da bateria, marcas de uso e acessórios informados antes da compra.</p></div></li>
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></i><div><b>Entregue na sacola da Beluco</b><p>Do jeito que você vê nos vídeos de unboxing do nosso Instagram.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="ig">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2 class="disp">Chegou na Beluco</h2>
+      <p>Lançamentos e unboxing saem primeiro no <a href="https://www.instagram.com/belucoimportados/" target="_blank" rel="noopener" style="color:var(--azul);font-weight:800;text-decoration:underline">@belucoimportados</a>.</p>
+    </div>
+    <div class="ig-grid rv">
+      <a href="https://www.instagram.com/belucoimportados/" target="_blank" rel="noopener"><img src="img/ig-p10.jpg" alt="Três iPhones 17 Pro em cores diferentes" loading="lazy"></a>
+      <a href="https://www.instagram.com/belucoimportados/" target="_blank" rel="noopener"><img src="img/ig-p4.jpg" alt="iPhone Pro titânio na mão" loading="lazy"></a>
+      <a href="https://www.instagram.com/belucoimportados/" target="_blank" rel="noopener"><img src="img/ig-p7.jpg" alt="iPhone Pro grafite em pé na mesa" loading="lazy"></a>
+      <a href="https://www.instagram.com/belucoimportados/" target="_blank" rel="noopener"><img src="img/ig-p8.jpg" alt="Post: por que escolher um MacBook" loading="lazy"></a>
+      <a href="https://www.instagram.com/belucoimportados/" target="_blank" rel="noopener"><img src="img/ig-p6.jpg" alt="Caixa preta de iPhone" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="duvidas">
+  <div class="wrap">
+    <div class="rv"><h2 class="disp">Dúvidas de quem vai comprar</h2><p class="lead" style="margin-top:18px">Não achou sua resposta? Chama no WhatsApp que a gente responde rapidinho.</p></div>
+    <div class="rv">
+      <details open><summary>Como funciona a troca do meu iPhone?</summary><p>Você conta o modelo, a memória e a saúde da bateria. A gente avalia o aparelho na entrega ou na loja e o valor dele sai do preço do novo. O restante você paga no Pix ou no cartão.</p></details>
+      <details><summary>Seminovo tem garantia?</summary><p>Sim. Todo seminovo sai com o prazo de garantia da loja informado por escrito, além da saúde da bateria e do estado do aparelho.</p></details>
+      <details><summary>Dá para parcelar em quantas vezes?</summary><p>Em até 21x no cartão de crédito. O valor de cada parcela depende da bandeira e das condições do dia; a gente te passa certinho antes de fechar.</p></details>
+      <details><summary>Vocês entregam onde?</summary><p>Entregamos na região. Combine pelo WhatsApp o melhor horário e lugar; se preferir, dá para retirar com a gente.</p></details>
+      <details><summary>Os aparelhos novos são lacrados?</summary><p>Sim, os novos vão lacrados na caixa. Você pode acompanhar a abertura na entrega, do jeito que mostramos nos vídeos do Instagram.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="end">
+  <div class="wrap">
+    <div class="rv">
+      <h2 class="disp">Bora trocar de iPhone?</h2>
+      <p class="lead">Manda o modelo que você quer e o que você tem hoje. A gente responde com o valor e a melhor forma de pagar.</p>
+      <div class="ctas">
+        <a class="btn btn-branco" href="https://wa.me/message/QRRWQ7CILKROH1" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <a class="btn btn-line" href="https://www.instagram.com/belucoimportados/" target="_blank" rel="noopener">Ver o Instagram</a>
+      </div>
+    </div>
+    <div class="pic rv"><img src="img/ig-h0.jpg" alt="Atendente da Beluco com caixas de iPhone lacradas" loading="lazy"></div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><span>© 2026 Beluco Importados · iPhone, Xiaomi, MacBook e acessórios</span><span>Fotos de produto ilustrativas: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> · Site por Evoly</span></div></footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const WA="https://wa.me/message/QRRWQ7CILKROH1";
+const P=[
+ {id:"17pm",n:"iPhone 17 Pro Max",c:"novo",gb:[256,512,1024],p:10499,img:"ig-p4.jpg"},
+ {id:"17p",n:"iPhone 17 Pro",c:"novo",gb:[256,512,1024],p:9299,img:"ig-p10.jpg"},
+ {id:"17",n:"iPhone 17",c:"novo",gb:[256,512],p:6499,img:"hero.jpg"},
+ {id:"16",n:"iPhone 16",c:"novo",gb:[128,256],p:5199,img:"iphone-preto.jpg"},
+ {id:"15pm",n:"iPhone 15 Pro Max",c:"semi",gb:[256,512],p:5499,img:"seminovo.jpg"},
+ {id:"14",n:"iPhone 14",c:"semi",gb:[128,256],p:2999,img:"iphone-mao.jpg"},
+ {id:"redmi",n:"Redmi Note 14 Pro",c:"xiaomi",gb:[256],p:1899,img:"xiaomi-mao.jpg"},
+ {id:"x15",n:"Xiaomi 15",c:"xiaomi",gb:[256,512],p:4599,img:"xiaomi.jpg"},
+ {id:"mba",n:"MacBook Air M4",c:"mac",gb:[256,512],p:8999,img:"macbook.jpg"},
+ {id:"app3",n:"AirPods Pro 3",c:"acc",gb:[],p:2199,img:"airpods.jpg"},
+ {id:"aw11",n:"Apple Watch Series 11",c:"acc",gb:[],p:3299,img:"watch.jpg"}
+];
+const LBL={novo:"Novo",semi:"Seminovo",xiaomi:"Xiaomi",mac:"MacBook",acc:"Acessório"};
+const brl=v=>"R$ "+v.toLocaleString("pt-BR");
+const gbt=g=>g>=1024?(g/1024)+" TB":g+" GB";
+const $=id=>document.getElementById(id);
+
+$("grid").innerHTML=P.map(x=>`<article class="card" data-c="${x.c}">
+ <div class="ph"><img src="img/${x.img}" alt="${x.n}" loading="lazy"><span class="badge ${x.c==='semi'?'semi':''}">${x.c==='semi'?'Seminovo':x.c==='novo'?'Lacrado':LBL[x.c]}</span></div>
+ <div class="b"><h3>${x.n}</h3><p class="opt">${x.gb.length?x.gb.map(gbt).join(" · "):"Original Apple"}</p>
+ <p class="pr">a partir de<b>${brl(x.p)}</b>ou até 21x no cartão</p>
+ <button class="want" data-want="${x.id}">Quero esse</button></div></article>`).join("")+`<article class="card ask" data-c="all"><div class="b"><h3>Não achou o seu?</h3><p class="opt">Cor, memória ou modelo diferente: a gente busca para você e avisa quando chegar.</p><a class="btn btn-branco" href="${WA}" target="_blank" rel="noopener">Pedir um modelo</a></div></article>`;
+
+document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{
+  document.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-pressed",b===t));
+  document.querySelectorAll(".card").forEach(c=>c.hidden=!(t.dataset.f==="all"||c.dataset.c==="all"||c.dataset.c===t.dataset.f));
+});
+
+// simulador
+$("modelo").innerHTML=P.map(x=>`<option value="${x.id}">${x.n}</option>`).join("")+`<option value="outro">Outro modelo</option>`;
+const seg=(el,name,opts,sel)=>{$(el).innerHTML=opts.map((o,i)=>`<label><input type="radio" name="${name}" value="${o}" ${(sel?o===sel:i===0)?"checked":""}><span>${o}</span></label>`).join("")};
+seg("pag","pag",["Pix","Cartão parcelado","Ainda não sei"]);
+function syncOpts(){
+  const x=P.find(p=>p.id===$("modelo").value);
+  const isPhone=!x||["novo","semi","xiaomi"].includes(x.c);
+  seg("cond","cond",x&&x.c==="semi"?["Seminovo","Novo","Tanto faz"]:["Novo","Seminovo","Tanto faz"]);
+  const gbs=x?(x.gb.length?x.gb.map(gbt):["Único"]):["128 GB","256 GB","512 GB","1 TB"];
+  seg("gb","gb",gbs);
+  $("gb").closest("fieldset").hidden=!!x&&!x.gb.length;
+  $("cond").closest("fieldset").hidden=!!x&&!isPhone&&x.c!=="mac";
+  upd();
+}
+function val(n){const r=document.querySelector(`input[name=${n}]:checked`);return r?r.value:""}
+function upd(){
+  const x=P.find(p=>p.id===$("modelo").value);
+  const gb=val("gb"),cond=val("cond"),pag=val("pag"),troca=$("temTroca").checked;
+  $("trade").hidden=!troca;
+  $("tNome").textContent=x?x.n:"Outro modelo";
+  $("tSub").textContent=x?(cond==="Novo"?"Novo, lacrado":cond==="Seminovo"?"Seminovo revisado":"Novo ou seminovo"):"Conte qual modelo você procura";
+  const img=$("tImg"),src="img/"+(x?x.img:"hero.jpg");if(!img.src.endsWith(src)){img.style.opacity=0;setTimeout(()=>{img.src=src;img.style.opacity=1},150)}
+  let mult=1;if(x&&x.gb.length){const g=gb.includes("TB")?parseFloat(gb)*1024:parseInt(gb);mult=1+Math.max(0,x.gb.indexOf(g))*.14}
+  if(x&&cond==="Seminovo"&&x.c!=="semi")mult*=.78;
+  const preco=x?Math.round(x.p*mult/10)*10-1:0;
+  $("tPreco").textContent=x?brl(preco):"Sob consulta";
+  $("tParc").textContent=pag==="Pix"?"à vista no Pix":"ou até 21x no cartão";
+  const rows=[["Armazenamento",x&&!x.gb.length?"—":gb],["Pagamento",pag],["Troca",troca?($("meu").value.trim()||"Sim, iPhone a avaliar"):"Não"]];
+  if(troca)rows.push(["Bateria do meu",$("bat").value]);
+  $("tDl").innerHTML=rows.map(r=>`<dt>${r[0]}</dt><dd>${r[1]}</dd>`).join("");
+  window._preco=preco;
+}
+$("f").addEventListener("input",upd);$("f").addEventListener("change",e=>{if(e.target.id==="modelo")syncOpts();else upd()});
+document.addEventListener("click",e=>{const w=e.target.closest("[data-want]");if(!w)return;$("modelo").value=w.dataset.want;syncOpts();$("pedido").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth"})});
+function toast(t){const e=$("toast");e.textContent=t;e.classList.add("show");clearTimeout(e._t);e._t=setTimeout(()=>e.classList.remove("show"),3400)}
+$("enviar").onclick=async()=>{
+  const x=P.find(p=>p.id===$("modelo").value);
+  let m=`Olá, Beluco! Quero um orçamento:\n• Aparelho: ${x?x.n:"outro modelo"}\n• Condição: ${val("cond")||"-"}\n• Armazenamento: ${val("gb")||"-"}\n• Pagamento: ${val("pag")}`;
+  if($("temTroca").checked)m+=`\n• Troca: ${$("meu").value.trim()||"tenho um iPhone"} (bateria: ${$("bat").value})`;
+  try{await navigator.clipboard.writeText(m);toast("Pedido copiado! Cole na conversa do WhatsApp.")}catch(_){toast("Abrindo o WhatsApp…")}
+  setTimeout(()=>window.open(WA,"_blank","noopener"),600);
+};
+$("modelo").value="17p";syncOpts();
+
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.12,rootMargin:"0px 0px -5% 0px"});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
